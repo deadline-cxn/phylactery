@@ -1,5 +1,4 @@
-<?php
-// Phylactery hot images
+<?php // Phylactery hot images (c) 2016 Seth Parson
 function phy_Percentage_Bar($percentage,$text=false,$width=300,$height=16) {
     header("Content-type: image/png");
     $im = @imagecreate($width, $height);
@@ -17,5 +16,3 @@ function phy_Percentage_Bar($percentage,$text=false,$width=300,$height=16) {
     imagepng($im);
     imagedestroy($im);
 }
-
-phy_Percentage_Bar(30);

@@ -1,5 +1,5 @@
 <?php
-function Get_Array($x) { $r="";
+function phy_Get_Array($x) { $r="";
     foreach($x as $k => $v) {
         if(is_array($v)) {
             $r .= " '$k' => ( ".Get_Array($v)." ), ";
@@ -10,7 +10,7 @@ function Get_Array($x) { $r="";
     }
     return $r;
 }
-function Get_Globals_Array() { $x=array();
+function phy_Get_Globals_Array() { $x=array();
     foreach($GLOBALS as $k => $v) {
         if( $k != "GLOBALS" and
             $k != 'x1'      and
@@ -21,8 +21,8 @@ function Get_Globals_Array() { $x=array();
     }
     return $x;
 }
-function Get_Array_Diff($array1,$array2) { $x=array(); foreach($array1 as $k => $v) if(!isset($array2[$k])) $x[$k]=$v; return $x; }
-function Get_Globals() { $x="";
+function phy_Get_Array_Diff($array1,$array2) { $x=array(); foreach($array1 as $k => $v) if(!isset($array2[$k])) $x[$k]=$v; return $x; }
+function phy_Get_Globals() { $x="";
     foreach($GLOBALS as $k => $v) {
         if( $k != "_GET"  and
             $k != "_POST" and
