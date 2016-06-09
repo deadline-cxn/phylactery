@@ -1,6 +1,6 @@
 <?php
 include("include.phylactery.php");
-if($_GET['i']=="i") { phy_Percentage_Bar($_GET['p']);  exit(); }
+if($_GET['i']=="i") { phy_Percentage_Bar($_GET['p'],1,323,123);  exit(); }
 $x=0;
 if(phy_BOOL_Check($x)) {
     phy_Color_Print("Phylactery Test","black","green");
