@@ -1,29 +1,24 @@
 <?php
 
-
-
 class FlatFileTable {
-    public $filename;
+	public $filename;
     public $fields=array();
-    function __construct($filename,$fields=null) {
-      $this->filename = $filename;
-      if($fields!=null) {
-          $fields=$fields;
-        }
+	function __construct($in_filename,$in_fields=null) {
+		$this->filename = $in_filename;
+		if($in_fields!=null) {
+          $this->fields=$in_fields;
+		}
     }
-    
+	function DefineFields($fields) { // fields = array 
+			
+	}
     function DeleteField($field) {
-        
-    }
-    
-    function AddField($field) {
-    
-    }
-    
-    function ExplodeLine($line) {
 
     }
-    
+    function AddField($field) {
+
+    }
+    // function ExplodeLine($line) {    }
     function DeleteID($id) {
         global $AUTH_FILE;
         $new_AUTH_FILE="$AUTH_FILE.tmp";
