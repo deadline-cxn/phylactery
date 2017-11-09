@@ -1,4 +1,7 @@
 <?php
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Phylactery PHP Library (c) 2017 Seth Parson
+
 function phy_Get_Array($x) { $r="";
     foreach($x as $k => $v) {
         if(is_array($v)) {

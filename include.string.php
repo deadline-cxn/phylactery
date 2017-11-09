@@ -1,6 +1,8 @@
 <?php
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Phylactery PHP Library (c) 2017 Seth Parson
 
-function phy_Color_Print($text="",$color="black",$bgcolor="") {
+function phy_Color_Print($text="EMPTY",$color="black",$bgcolor="") {
     $color=strtolower($color);
     $bgcolor=strtolower($bgcolor);
     $ansi=array();

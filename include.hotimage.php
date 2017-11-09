@@ -1,4 +1,7 @@
-<?php // Phylactery hot images (c) 2016 Seth Parson
+<?php
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// Phylactery PHP Library (c) 2017 Seth Parson
+
 function phy_Percentage_Bar($percentage,$text=false,$width=300,$height=16) {
     header("Content-type: image/png");
     $im = @imagecreate($width, $height);
